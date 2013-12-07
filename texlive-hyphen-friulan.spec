@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-friulan
 Version:	20120809
-Release:	4
+Release:	5
 Summary:	Friulan hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
