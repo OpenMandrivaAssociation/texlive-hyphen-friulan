@@ -69,11 +69,3 @@ cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-friulan <<EOF
 		hyphenation = '',
 	},
 EOF
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120809-1
-+ Revision: 813566
-- Import texlive-hyphen-friulan
-- Import texlive-hyphen-friulan
-
