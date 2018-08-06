@@ -34,6 +34,8 @@ November 6, 1996 and its following amendments.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/*
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/*/*
 %_texmf_language_dat_d/hyphen-friulan
 %_texmf_language_def_d/hyphen-friulan
 %_texmf_language_lua_d/hyphen-friulan
@@ -45,6 +47,9 @@ November 6, 1996 and its following amendments.
 %build
 
 %install
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar tex %{buildroot}%{_texmfdistdir}
+
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-friulan <<EOF
 \%% from hyphen-friulan:
